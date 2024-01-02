@@ -212,7 +212,9 @@ pre {
         <hgroup>
            <h1>Welcome to your CakePHP application on OpenShift</h1>
         </hgroup>
-
+	<hgroup>
+		   <h1><?=  getenv("WELCOME") ?>  </h1>
+	</hgroup>
         <?= $this->fetch('content') ?>
 
         <footer>
